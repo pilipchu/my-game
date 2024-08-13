@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #434455;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+}
