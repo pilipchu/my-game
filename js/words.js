@@ -1,108 +1,104 @@
 export const words = [
   {
-    word: 'дракон',
+    word: 'dragon',
     explanation: 'Міфічна істота, яка дихає вогнем.',
   },
   {
-    word: 'піраміда',
+    word: 'pyramid',
     explanation: 'Давня споруда в Єгипті.',
   },
   {
-    word: 'ромашка',
+    word: 'chamomile',
     explanation: 'Біла квітка з жовтою серединкою.',
   },
   {
-    word: 'скрипка',
+    word: 'violin',
     explanation: 'Музичний інструмент з чотирма струнами.',
   },
   {
-    word: 'компас',
+    word: 'compass',
     explanation: 'Прилад для визначення сторін світу.',
   },
   {
-    word: 'космонавт',
+    word: 'astronaut',
     explanation: 'Людина, яка літає в космос.',
   },
   {
-    word: 'човен',
+    word: 'boat',
     explanation: 'Невелике судно для плавання.',
   },
   {
-    word: 'ведмідь',
+    word: 'bear',
     explanation: 'Великий лісовий звір, любить мед.',
   },
   {
-    word: 'книжка',
+    word: 'book',
     explanation: 'Джерело знань і розваг.',
   },
   {
-    word: 'морозиво',
-    explanation: 'Холодний десерт з молока.',
-  },
-  {
-    word: 'пісок',
+    word: 'sand',
     explanation: 'Дрібні зернятка на пляжі.',
   },
   {
-    word: 'павук',
+    word: 'spider',
     explanation: 'Комаха з восьми ногами.',
   },
   {
-    word: 'крила',
+    word: 'wings',
     explanation: 'Те, що є у птахів для польоту.',
   },
   {
-    word: 'годинник',
+    word: 'clock',
     explanation: 'Прилад для вимірювання часу.',
   },
   {
-    word: 'сонце',
+    word: 'sun',
     explanation: 'Зірка, що дає світло і тепло.',
   },
   {
-    word: 'крокодил',
+    word: 'crocodile',
     explanation: 'Хижий рептилія з потужними щелепами.',
   },
   {
-    word: 'дзеркало',
+    word: 'mirror',
     explanation: 'Поверхня, що відображає зображення.',
   },
   {
-    word: 'пальма',
+    word: 'palm',
     explanation: 'Тропічне дерево з довгими листками.',
   },
   {
-    word: 'сова',
+    word: 'owl',
     explanation: 'Нічний птах з великими очима.',
   },
   {
-    word: 'парасолька',
+    word: 'umbrella',
     explanation: 'Захищає від дощу.',
   },
   {
-    word: 'ракета',
+    word: 'rocket',
     explanation: 'Засіб для польотів у космос.',
   },
   {
-    word: 'мікроскоп',
+    word: 'microscope',
     explanation: "прилад для розгляду дрібних об'єктів.",
   },
   {
-    word: 'джунглі',
+    word: 'jungle',
     explanation:
       'Місце, де живуть багато диких тварин і ростуть екзотичні рослини.',
   },
   {
-    word: 'карандаш',
+    word: 'pencil',
     explanation:
       'Інструмент для письма або малювання, який залишає слід на папері.',
   },
   {
-    word: 'озеро',
+    word: 'lake',
     explanation: 'Природний водний резервуар, оточений сушею.',
   },
   {
-    word: 'вітрило',
+    word: 'sail',
     explanation:
       'Тканина, яку використовують на човні, щоб ловити вітер і рухатися вперед.',
   },
