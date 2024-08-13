@@ -7,8 +7,11 @@ const textSpan = document.querySelector('#word-output');
 const textWordSpan = document.querySelector('#word-pl');
 const lifeSpan = document.querySelector('#span-life');
 const formInput = document.querySelector('.form');
+const resetBtn = document.querySelector('#reset-btn');
 
 let life = 10;
+let win = false;
+let reset = false;
 
 // отримуємо случайний обєкт з масиву
 const randomWord = selectionRandomWord(words);
@@ -27,39 +30,54 @@ function showPlayerWord(word) {
   }
 }
 
+async function getWin() {
+  return (win = true);
+}
+
+function resetGame() {
+  return (reset = true);
+}
+
 // Відображаємо отримане закодоване слоао
 showPlayerWord(answerWord);
+
+resetBtn.addEventListener('click', () => {
+  resetGame();
+});
+
 // Збереження букви з інпута
+
 formInput.addEventListener('submit', cheak);
 
 function cheak(event) {
-  event.preventDefault();
-  const form = event.target;
-  const letter = form.elements.letter.value;
+  if (!win) {
+    if (life > 0) {
+      event.preventDefault();
+      const form = event.target;
+      const letter = form.elements.letter.value;
 
-  if (letter === '' || letter.length !== 1) {
-    alert('Please enter a single letter');
+      if (letter === '' || letter.length !== 1) {
+        alert('Please enter a single letter');
+      }
+
+      const result = updateWord(letter, randomWord.word, answerWord);
+
+      if (result !== false) {
+        textSpan.textContent = result;
+      } else {
+        life -= 1;
+        lifeSpan.textContent = life;
+      }
+      form.reset();
+      if (result !== false && !result.includes('_')) {
+        getWin();
+        alert(answerWord.join(' '));
+        alert('Good job! The answer was ' + randomWord.word);
+      }
+    } else {
+      alert('Game over');
+      alert('Try again');
+    }
   }
-
-  const result = updateWord(letter, randomWord.word, answerWord);
-
-  if (result !== false) {
-    textSpan.textContent = result;
-  } else {
-    life -= 1;
-    lifeSpan.textContent = life;
-  }
-
-  if (life <= 0) {
-    alert('Gema over');
-    return;
-  }
-  if (!result.includes('_')) {
-    alert(answerWord.join(' '));
-    alert('Good job! The answer was ' + randomWord.word);
-    return;
-  }
-
-  form.reset();
 }
 // Ігра іще лороблюється, хочу пофіксити баги з жизнями і зроити функцію резстарта, нова гра коли успішно проходимо гру
